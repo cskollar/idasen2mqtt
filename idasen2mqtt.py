@@ -4,14 +4,12 @@ import sys
 import struct
 from bluepy.btle import Peripheral, ADDR_TYPE_RANDOM
 import paho.mqtt.client as mqtt
-import json
 
 #settings
 
-desk_address = "cb:6d:34:b2:52:d3"
-mqtt_server = "10.20.20.3"
+desk_address = "mac_adddress_of_your_desk"
+mqtt_server = "IP_address_of_your_mqtt_broker"
 mqtt_port = 1883
-desk_service_uuid = "99fa0020-338a-1024-8a49-009c0215f78a"
 desk_handler = 0x0010
 payload_up = "4700"
 payload_down = "4600"
